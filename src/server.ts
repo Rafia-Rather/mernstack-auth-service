@@ -1,7 +1,12 @@
 function welcome(name: string) {
     console.log('welcome ' + name)
 
-    return name
+    const user = {
+        name: 'Rafia',
+    }
+
+    const fname = user['name']
+    return name + fname
 }
 
 welcome('Rafia')
