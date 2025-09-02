@@ -20,5 +20,5 @@ export default tseslint.config(
       // "no-console": "error",
       // "dot-notation": "error",
     },
-  }
+  },
 );
