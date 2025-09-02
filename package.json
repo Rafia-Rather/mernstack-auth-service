@@ -1,41 +1,45 @@
 {
-  "name": "auth",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node src/server.js",
-    "format:fix": "prettier . --write",
-    "format:check": "prettier . --check",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prepare": "husky"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rafia-Rather/mernstack-auth-service.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rafia-Rather/mernstack-auth-service/issues"
-  },
-  "homepage": "https://github.com/Rafia-Rather/mernstack-auth-service#readme",
-  "description": "",
-  "devDependencies": {
-    "@eslint/js": "^9.34.0",
-    "@types/node": "^24.3.0",
-    "eslint": "^9.34.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.1.6",
-    "prettier": "3.6.2",
-    "typescript": "^5.9.2",
-    "typescript-eslint": "^8.41.0"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "npm run format:fix",
-      "npm run lint:fix"
-    ]
-  }
+    "name": "auth",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node src/server.js",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "prepare": "husky"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rafia-Rather/mernstack-auth-service.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Rafia-Rather/mernstack-auth-service/issues"
+    },
+    "homepage": "https://github.com/Rafia-Rather/mernstack-auth-service#readme",
+    "description": "",
+    "devDependencies": {
+        "@eslint/js": "^9.34.0",
+        "@types/node": "^24.3.0",
+        "eslint": "^9.34.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.1.6",
+        "prettier": "3.6.2",
+        "typescript": "^5.9.2",
+        "typescript-eslint": "^8.41.0"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npm run format:fix",
+            "npm run lint:fix"
+        ]
+    },
+    "dependencies": {
+        "dotenv": "^17.2.1"
+    }
 }
